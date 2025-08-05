@@ -9,6 +9,7 @@ const __dirname = path.resolve();
 const app = express();
 const Port = process.env.PORT || 4000;
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(express.json());
 app.use("/api", routes);
 app.use("/", (req, res) => {
   res.send("hello world");
