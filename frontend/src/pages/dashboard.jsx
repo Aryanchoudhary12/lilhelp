@@ -6,6 +6,11 @@ import { SiReactivex } from "react-icons/si";
 import { PiCertificateFill } from "react-icons/pi";
 import { IoMedal } from "react-icons/io5";
 import { GiMedalSkull } from "react-icons/gi";
+import userimage from "../assets/dummy.jpg";
+import svg1 from "../assets/Frame 1.svg";
+import svg2 from "../assets/Frame 2.svg";
+import svg3 from "../assets/Rectangle 4.svg";
+
 import axios from "axios";
 function Dashboard() {
   const [data, setData] = useState([]);
@@ -24,7 +29,7 @@ function Dashboard() {
   console.log(data);
   const rewards = [
     {
-      image: "../../src/assets/Frame 1.svg",
+      image: svg1,
       prize: " ₹5,000",
       content: " Certificate of Recognition",
       icon: (
@@ -32,7 +37,7 @@ function Dashboard() {
       ),
     },
     {
-      image: "../../src/assets/Frame 2.svg",
+      image: svg2,
       prize: " ₹10,000",
       content: " Special Gift Hamper",
       icon: (
@@ -40,7 +45,7 @@ function Dashboard() {
       ),
     },
     {
-      image: "../../src/assets/Rectangle 4.svg",
+      image: svg3,
       prize: " ₹20,000",
       content: "Exclusive Campaign Bonus",
       icon: (
@@ -58,7 +63,7 @@ function Dashboard() {
         <div className="grid grid-cols-1 md:grid-cols-7 w-full gap-4">
           <div className="flex flex-col md:flex-row items-center gap-4 col-span-4">
             <img
-              src="../../src/assets/dummy.jpg"
+              src={userimage}
               alt=""
               className="rounded-full w-40 h-40 object-cover shadow-sm shadow-secondary-foreground/50 p-0.5 border-2 border-secondary-foreground/70"
             />
