@@ -17,7 +17,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/data");
+        const res = await axios.get("https://lilhelp.onrender.com/api/data");
         setData(res.data.data);
       } catch (error) {
         console.error("Something went wrong:", error);
